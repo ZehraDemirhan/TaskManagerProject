@@ -36,7 +36,7 @@
     var_dump($_SESSION);
     extract($_POST);
     registerUser($name,$email,$pass,$file);
-    header("Location: taskmanager.php");
+    header("Location: index.php");
   }
 
   
