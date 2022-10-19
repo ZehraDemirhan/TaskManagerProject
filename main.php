@@ -42,7 +42,7 @@
                    if(newvalue!=0)
                    {
                    //alert(newvalue);
-                   $("#"+todecrease).text(newvalue);
+                   $("#"+todecrease).text(5);
                 }
 
                    // alert('#'+id1+'1');
