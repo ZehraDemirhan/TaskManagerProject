@@ -30,9 +30,9 @@
                     $('#'+id1+'1').remove();
 
 
-                    if(info.iscomp==='0')
+                    if(info.iscomp=='0')
                     {
-                        alert("here");
+
                    let oldvalue= $("#"+todecrease).text();
                    //alert(oldvalue);
                  if(oldvalue!=0)
