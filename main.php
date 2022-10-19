@@ -28,6 +28,7 @@
                 //alert(todecrease);
                 $.get("delete.php",{"id":id1},function(info){
                     $('#'+id1+'1').remove();
+                    alert(info.iscomp);
 
                     if(info.iscomp==='0')
                     {
