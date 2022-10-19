@@ -32,7 +32,7 @@
 
                     if(info.iscomp==='0')
                     {
-                        alert(info.iscomp);
+                        alert("here");
                    let oldvalue= $("#"+todecrease).text();
                    //alert(oldvalue);
                  if(oldvalue!=0)
