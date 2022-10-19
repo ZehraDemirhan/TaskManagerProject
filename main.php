@@ -145,7 +145,7 @@ require "db.php";
 
 session_start();
 if( !validSession()) {
-  header("Location: taskmanager.php?error") ;
+  header("Location: index.php?error") ;
   exit ; 
 }
 
