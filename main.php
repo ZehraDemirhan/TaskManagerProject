@@ -39,9 +39,10 @@
                  if(oldvalue!=0)
                 { let newvalue=oldvalue-1;
                   
-                  
+                  alert(newvalue);
                    if(newvalue!=0)
                    {
+                       alert("here");
                    //alert(newvalue);
                    $("#"+todecrease).text(newvalue);
                 }
