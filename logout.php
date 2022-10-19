@@ -9,4 +9,4 @@
    setcookie(session_name(), "", 1 , "/") ; // delete memory cookie 
    
    // redirect to login page
-   header("Location: taskmanager.php") ;
+   header("Location: index.php") ;
