@@ -28,11 +28,11 @@
                 //alert(todecrease);
                 $.get("delete.php",{"id":id1},function(info){
                     $('#'+id1+'1').remove();
-                    alert(info.iscomp);
+
 
                     if(info.iscomp==='0')
                     {
-                   
+                        alert(info.iscomp);
                    let oldvalue= $("#"+todecrease).text();
                    //alert(oldvalue);
                  if(oldvalue!=0)
@@ -42,7 +42,7 @@
                    if(newvalue!=0)
                    {
                    //alert(newvalue);
-                   $("#"+todecrease).text(5);
+                   $("#"+todecrease).text(newvalue);
                 }
 
                    // alert('#'+id1+'1');
