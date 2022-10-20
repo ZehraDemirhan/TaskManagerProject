@@ -47,7 +47,7 @@
 
     if (in_array($fileActualExt, $allowed ))
     {
-        alert("here");
+        //alert("here");
         if($file === 0)
         {
             if($fileSize < 1000000)
