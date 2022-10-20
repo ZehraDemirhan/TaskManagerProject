@@ -57,10 +57,13 @@
             if($fileSize < 1000000)
             {
                 //Create random unique id to distinguish the files
+
                 $fileNameNew = uniqid('', true ).".".$fileActualExt;
 
                 $fileDestination = 'images/'.$fileNameNew;
 
+                echo ($fileNameNew);
+                echo($fileDestination);
                 move_uploaded_file($fileTmpName, $fileDestination);
 
 
