@@ -29,10 +29,10 @@
                 //alert(todecrease);
                 $.get("delete.php",{"id":id1},function(info){
                     $('#'+id1+'1').remove();
-                    alert(info.iscomp);
 
 
-                    if(info.iscomp==='0')
+
+                    if(info.iscomp === 0)
                     {
 
                    let oldvalue= $("#"+todecrease).text();
@@ -77,7 +77,7 @@
                    let newvalue;
                    
                
-                    if(data.completed==='0')
+                    if(data.completed === 0 )
                     {
 
                       newvalue=parseInt(oldvalue)-1;
@@ -120,7 +120,7 @@
                 
                 
             
-               if(data.important==='0')
+               if(data.important=== 0)
                {
                 $("#"+id1+'3').text('star');
                }
