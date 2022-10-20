@@ -47,6 +47,7 @@
 
     if (in_array($fileActualExt, $allowed ))
     {
+        alert("here");
         if($file === 0)
         {
             if($fileSize < 1000000)
@@ -143,7 +144,7 @@
         <input type="file" name="file">
       </div>
       <div class="file-path-wrapper">
-        <input class="file-path validate" type="text"  value=<?= $file ?? '' ?> >
+        <input class="file-path validate" type="text"   >
       </div>
     </div>
     </div>
