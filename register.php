@@ -45,12 +45,12 @@
 
     $allowed = array('jpg', 'jpeg', 'png');
 
-    echo($fileActualExt);
+   // echo($fileActualExt);
     if (in_array($fileActualExt, $allowed ))
     {
-        echo("here");
+        //echo("here");
 
-        if($file === 0)
+        if($fileError === 0)
         {
             if($fileSize < 1000000)
             {
