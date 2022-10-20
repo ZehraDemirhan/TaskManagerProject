@@ -94,7 +94,7 @@
     registerUser($name,$email,$pass,$file);
 
 
-    header("Location: index.php");
+    //header("Location: index.php");
   }
 
   
@@ -111,7 +111,7 @@
   </nav>
   
   <div class="center">
-  <div class="row" >//enctype for passing images
+  <div class="row" >
     <form class="" method="post"  enctype="multipart/form-data" >
       <div class="row" >
         <div class="input-field " >
