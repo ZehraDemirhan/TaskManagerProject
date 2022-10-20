@@ -34,11 +34,13 @@
   {
     $file= $_FILES['file'];
 
+    var_dump($file);
+
     $fileName = $_FILES['file']['name'];
-    $fileTmpName = $_FILES['file']['name'];
-    $fileSize = $_FILES['file']['name'];
-    $fileError = $_FILES['file']['name'];
-    $fileType= $_FILES['file']['name'];
+    $fileTmpName = $_FILES['file']['tmp'];
+    $fileSize = $_FILES['file']['size'];
+    $fileError = $_FILES['file']['error'];
+    $fileType= $_FILES['file']['type'];
 
     $fileExt = explode('.',$fileName);
     $fileActualExt = strtolower(end($fileExt));
@@ -60,9 +62,6 @@
                 $fileDestination = 'images/'.$fileNameNew;
 
                 move_uploaded_file($fileTmpName, $fileDestination);
-
-
-
 
 
             }
