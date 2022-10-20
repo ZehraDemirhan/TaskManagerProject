@@ -45,9 +45,11 @@
 
     $allowed = array('jpg', 'jpeg', 'png');
 
+    echo($fileActualExt);
     if (in_array($fileActualExt, $allowed ))
     {
-        //alert("here");
+        echo("here");
+
         if($file === 0)
         {
             if($fileSize < 1000000)
@@ -90,7 +92,7 @@
 
 
     $_SESSION['user']['image']=$file;
-    var_dump($_SESSION);
+    //var_dump($_SESSION);
     extract($_POST);
     registerUser($name,$email,$pass,$file);
 
