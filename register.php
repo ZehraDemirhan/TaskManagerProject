@@ -34,7 +34,7 @@
   {
     $file= $_FILES['file'];
 
-    /var_dump($file);
+    //var_dump($file);
 
     $fileName = $_FILES['file']['name'];
     $fileTmpName = $_FILES['file']['tmp'];
